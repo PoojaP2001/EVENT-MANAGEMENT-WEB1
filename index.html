@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        body {
+            color:white;
+            margin:0px;
+            padding:0px;
+            background-image: url("./eventimage.jpg");
+        }
+        .left {
+            position:absolute;
+            left:34px;
+            top:20px;
+            display:inline-block;
+            /* border :2px solid red; */
+
+        }
+        .left img {
+            width:136px;
+        }
+        .left div {
+            text-align: center;
+            /* font-size:26px;
+            text-align: center; */
+        }
+        .mid {
+            display:block;
+            width:45%;
+            margin:29px auto;
+            /* border :2px solid green; */
+        }
+        .right {
+            position:absolute;
+            right:34px;
+            top:43px;
+            display:inline-block;
+            /* border :2px solid yellow; */
+
+        }
+        .navbar {
+            display:inline-block;
+            
+        }
+        .navbar li {
+            
+            display:inline-block;
+            font-size: 15px;
+        }
+        .navbar li a {
+            color:white;
+            text-decoration: none;
+            padding:34px 23px;
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration:underline;
+            color:grey;
+        }
+        .btn{
+            margin:0px 9px;
+            background-color: black;
+            color:white;
+            padding:4px 14px;
+            border:2px solid grey;
+            border-radius:10px;
+            font-size:15px;
+            cursor:pointer;
+        }
+        .btn:hover{
+            background-color: grey;
+        }
+        .container {
+            border:2px solid rgb(225, 243, 225);
+            margin:106px 80px;
+            padding:75px;
+            width:33%;
+            border-radius: 28px;
+        }
+        .from-group input{
+            text-align: center;
+            display: block;
+            width: 74%;
+            padding:6px;
+            border: 2px solid black;
+            margin:11px auto;
+
+
+        }
+        .container button {
+            display: block;
+            width:74%;
+            margin:20px auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+           <img src="./logo.png" alt="">
+           <div>pooja Management</div>
+       
+        </div>
+         <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Speaker</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </div>
+         <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+        <div class="container">
+            <h1>Join the best event planner now</h1>
+            <from action="noaction.php">
+                <div class="from-group">
+                    <input type="text" name="" placeholder="enter your name" size="50">
+                </div>
+                <div class="from-group">
+                    <input type="number" name="" placeholder="enter your age" size="50">
+                </div>
+                <div class="from-group">
+                    <input type="text" name="" placeholder="enter your gender" size="50">
+                </div>
+                <div class="from-group">
+                    <input type="text" name="" placeholder="enter your locality" size="50">
+                </div>
+                <button class="btn">Submit</button>
+            </from>
+            
+
+        </div>
+
+    
+</body>
+</html> 
